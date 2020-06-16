@@ -45,20 +45,3 @@ jobs:
       - run: npm run publish:npm
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-
-  publish-gpr:
-    if: github.event_name == 'push'
-    needs: [build, test]
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-          registry-url: https://npm.pkg.github.com/
-      - run: git config --global user.email "sadickjunior@gmail.com"
-      - run: git config --global user.name "sadick254"
-      - run: npm ci
-      - run: npm run publish:gh
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GH_TOKEN}}
