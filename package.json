@@ -8,7 +8,8 @@
     "component:create": "plop component",
     "storybook": "start-storybook",
     "build": "lerna exec --parallel -- babel src/index.js -d dist --root-mode upward",
-    "publish": "lerna publish from-package --yes -m 'chore(release): publish'"
+    "publish:npm": "lerna publish from-package --yes -m 'chore(release): publish'",
+    "publish:gh": "lerna publish from-package --registry https://npm.pkg.github.com --yes -m 'chore(release): publish'"
   },
   "author": "",
   "license": "MIT",
