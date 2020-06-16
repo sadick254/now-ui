@@ -10,17 +10,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - run: npm ci
-      - run: npm run build
   test:
-    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -31,7 +21,7 @@ jobs:
       - run: npm test
   publish-npm:
     if: github.event_name == 'push'
-    needs: [build, test]
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -42,6 +32,7 @@ jobs:
       - run: git config --global user.email "sadickjunior@gmail.com"
       - run: git config --global user.name "sadick254"
       - run: npm ci
-      - run: npm run publish:npm
+      - run: npm run build
+      - run: npm run publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
