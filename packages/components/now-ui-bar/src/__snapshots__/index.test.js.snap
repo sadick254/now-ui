@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bar should render correctly 1`] = `
+<div>
+  <div
+    class="iZzsrl "
+    height="150px"
+    width="48px"
+  >
+    27.5%
+    <div
+      backgroundcolor="#8C4C44"
+      borderradius="4px"
+      class="ljApbG "
+    >
+      <div
+        borderradius="0 0 4px 4px"
+        class="cgiiXG "
+        fillcolor="#D2634C"
+        fillheight="20%"
+      />
+    </div>
+    18-24
+  </div>
+</div>
+`;

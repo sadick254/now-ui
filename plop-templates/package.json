@@ -1,0 +1,10 @@
+{
+  "name": "@now-ui/{{lowerCase name}}",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "sadickisaac <isaac.odhiambo@andela.com>",
+  "homepage": "https://github.com/sadick254/now-ui/tree/master/packages/components/now-ui-{{lowerCase name}}",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "keywords": ["now-ui", "{{lowerCase name}}, 'now-ui-{{lowerCase name}}'"]
+}

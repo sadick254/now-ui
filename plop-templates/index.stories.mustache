@@ -1,0 +1,15 @@
+import {h} from 'preact';
+import {storiesOf} from '@storybook/preact';
+import {withKnobs} from '@storybook/addon-knobs';
+import {{name}} from '.';
+import notes from '../README.md';
+
+storiesOf('{{name}}', module)
+  .addDecorator(withKnobs)
+  .add(
+    'default',
+    () => {
+      return <{{name}} />;
+    },
+    {notes},
+  );

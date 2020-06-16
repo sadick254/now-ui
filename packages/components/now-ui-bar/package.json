@@ -1,0 +1,18 @@
+{
+  "name": "@now-ui/bar",
+  "version": "1.0.5",
+  "description": "> TODO: description",
+  "author": "sadickisaac <isaac.odhiambo@andela.com>",
+  "license": "ISC",
+  "main": "dist/index.js",
+  "homepage": "https://github.com/sadick254/now-ui/tree/master/packages/components/now-ui-bar",
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "bar",
+    "now-ui",
+    "now-ui-bar"
+  ],
+  "gitHead": "390cdd3c81d0ba22feeefb307a6828ae38a55185"
+}

@@ -1,0 +1,17 @@
+{
+  "name": "@now-ui/build",
+  "version": "1.0.0",
+  "description": "Build tool",
+  "main": "cli.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "bin": {
+    "now-build": "./cli.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,10 @@
+import {h} from 'preact'
+import {render} from '@testing-library/preact';
+import {{name}} from '.'
+
+describe('{{name}}', () => {
+  it('should render correctly', () => {
+    const {container} = render(<{{name}} />);
+    expect(container).toMatchSnapshot();
+  });
+});
