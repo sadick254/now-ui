@@ -8,7 +8,7 @@
     "component:create": "plop component",
     "storybook": "start-storybook",
     "build": "lerna exec --parallel -- babel src/index.js -d dist --root-mode upward",
-    "publish": "lerna publish --from-git --conventional-commits --yes -m 'chore(release): publish %s'"
+    "publish": "lerna publish --conventional-commits --yes -m 'chore(release): publish %s'"
   },
   "author": "",
   "license": "MIT",
